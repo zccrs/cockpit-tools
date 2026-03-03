@@ -7,6 +7,15 @@ All notable changes to Cockpit Tools will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
+## [0.9.11] - 2026-03-03
+
+### Fixed
+- **Fixed Windows switch/start crashes on non-ASCII install paths**: Windows extended-path normalization now uses Unicode-safe prefix handling, preventing `byte index is not a char boundary` panics on paths such as `D:\小歪瓜\...`.
+
+### Changed
+- **Verification default model selection now prioritizes Flash**: In “Run check now”, the default model now selects the first option whose display name contains `flash` (case-insensitive), and falls back to the first available model when no match exists.
+
+---
 ## [0.9.10] - 2026-03-02
 
 ### Changed
