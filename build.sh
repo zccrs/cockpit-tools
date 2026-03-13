@@ -3,9 +3,9 @@ set -e
 
 echo "=== Building Cockpit Tools for Lazycat MicroServer ==="
 
-# Install dependencies
+# Install dependencies (including devDependencies for build)
 echo "Installing dependencies..."
-npm ci --production
+npm ci
 
 # Build the frontend
 echo "Building frontend..."
