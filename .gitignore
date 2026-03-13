@@ -39,3 +39,4 @@ arms.biz.trace.*
 # Lazycat MicroServer
 release/*.lpk
 lzc-icon.png
+.lzc-cli-build*/
