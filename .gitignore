@@ -35,3 +35,7 @@ docs/plugin-architecture-design.md
 # Runtime caches
 src-tauri/arms_cache/
 arms.biz.trace.*
+
+# Lazycat MicroServer
+release/*.lpk
+lzc-icon.png

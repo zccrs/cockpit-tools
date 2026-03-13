@@ -1,0 +1,16 @@
+lzc-sdk-version: '0.1'
+name: Cockpit Tools
+package: cloud.lazycat.app.cockpit-tools
+version: 0.13.0
+application:
+  subdomain: cockpit
+  routes:
+    - /=http://cockpit-web.cloud.lazycat.app.cockpit-tools.lzcapp:80
+services:
+  cockpit-web:
+    image: nginx:alpine
+    binds:
+      - /lzcapp/pkg/content:/usr/share/nginx/html:ro
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
